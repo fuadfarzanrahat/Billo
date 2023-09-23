@@ -1,0 +1,110 @@
+@mixin minwidth($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-size: 15px;
+    @include minwidth(768px) {
+        font-size: 16px;     
+    }
+    font-family: 'Poppins';
+}
+// font color
+$prmary-font-color: #ffffff;
+$secondary-font-color: #0d0a0a;
+// section color
+$primary-sec-color:#fff;
+$sec-sec-color: rgb(255, 255, 255);
+
+.container{
+    @include minwidth(1400px) {
+        width: 1620px;      
+    }
+}
+// header menu css start
+.headerr{
+    background-color: $sec-sec-color;
+}
+.hdr_row{
+    width: 100%;
+    padding: 20px; 
+    display: flex;  
+    flex-wrap: wrap;
+    .hdr_logo{   
+        width: 20%; 
+    .billo{
+        font-size: 24px;    
+        font-weight: 600;   
+    }
+} 
+}
+.hdr_menu{
+    width: 80%;   
+    display: none; 
+    @include minwidth(768px) {
+        display: initial;     
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-items: center;
+        li{position: relative;
+            list-style: none;
+            // padding: 0px 15px;
+            margin: 0px 15px;
+            a{
+                text-decoration: none;
+                color: $secondary-font-color;
+                font-weight: 600;
+                font-size: 14px;                
+            }          
+        }
+    }
+}
+.hdr_menu ul li:hover{ 
+    a{
+        color: rgb(30, 27, 227);                 
+     }
+}
+.menu_trans li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #34efdf;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+.menu_trans li a:hover:before{
+    width: 100%;
+  }
+#page{
+    width: 80%;
+    display: flex;
+ justify-content: end;
+ @include minwidth(768px) {
+    display: none;  
+}
+}
+.fa-bars{
+    color: $secondary-font-color!important;
+    font-size: 24px!important;   
+}
+// header menu css end
+
+
+
+
+
