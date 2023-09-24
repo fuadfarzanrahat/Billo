@@ -6,7 +6,7 @@
   font-display: swap;
 }
 body {
-  font-size: 15px;
+  font-size: 14px;
   font-family: "Poppins";
 }
 @media only screen and (min-width: 768px) {
@@ -22,7 +22,7 @@ body {
 }
 
 .headerr {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .hdr_row {
@@ -102,136 +102,99 @@ body {
   font-size: 24px !important;
 }
 
-image hover content css start .containerr {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  display: flex;
-}
-
-.hover_ovlay_box {
-  width: 400px;
-  margin: auto;
-  position: relative;
-}
-.hover_ovlay_box img {
-  width: 100%;
-  border-radius: 15px;
-}
-.hover_ovlay_box .slider {
-  background-color: rgba(52, 239, 223, 0.2509803922);
-  border-radius: 15px;
-  position: absolute;
-  width: 400px;
-  bottom: 100%;
-  left: 0px;
-  top: 0px;
-  height: 0px;
-  overflow: hidden;
-  transition: 0.7s;
-}
-.hover_ovlay_box .slider .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.hover_ovlay_box:hover .slider {
-  height: 100%;
-  bottom: 0px;
-}
-
-.any_test {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: red;
-  position: relative;
-  animation: myfirst 1.5s linear 0.5s infinite reverse;
-  margin: 50px auto;
-}
-.any_test img {
-  width: 100%;
-  border-radius: 50%;
-}
-
-@keyframes myfirst {
-  from {
-    width: 200px;
-    height: 200px;
-  }
-  to {
-    width: 220px;
-    height: 220px;
-  }
-}
-.bubble_ani {
-  position: relative;
-  background-image: url(../image/ab.jpg);
+.bannar_sec {
+  background-image: url(../image/ofice.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
-  height: 600px;
-  padding-bottom: 100px;
+  background-attachment: fixed;
+}
+.bannar_sec .banar_ovlay {
+  background-color: rgba(0, 200, 255, 0.612);
+  padding: 50px 0px;
+}
+@media only screen and (min-width: 768px) {
+  .bannar_sec .banar_ovlay {
+    padding: 100px 10px;
+  }
 }
 
-.bubble_images {
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
+.bannar-row {
+  max-width: 780px;
+  margin: auto;
+  padding: 0px 10px;
+}
+@media only screen and (min-width: 768px) {
+  .bannar-row {
+    padding: 10px 100px;
+  }
+}
+.bannar-row .banar_hdng {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+@media only screen and (min-width: 768px) {
+  .bannar-row .banar_hdng {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 992px) {
+  .bannar-row .banar_hdng {
+    font-size: 35px;
+  }
+}
+
+.banar_p {
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 10px;
+}
+@media only screen and (min-width: 768px) {
+  .banar_p {
+    padding: 10px 40px;
+  }
+}
+
+.bttn_get_started {
+  width: 140px;
+  height: 40px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  border-radius: 50px;
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(to right, rgb(3, 6, 109), rgb(42, 46, 173));
+  margin: auto;
+  transition: 0.2s linear;
+}
+.bttn_get_started:hover {
+  background: linear-gradient(to right, rgb(13, 18, 150), rgb(69, 74, 217));
+  transform: translateY(-4px);
 }
 
-.bubble_img {
-  border-radius: 50%;
-  animation: bubble 7s linear infinite;
+#service {
+  padding: 80px 0px;
 }
-
-@keyframes bubble {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-600px);
-    opacity: 0;
-  }
+#service .service_hding {
+  font-weight: 600;
+  font-size: 35px;
 }
-.bubble_img:nth-child(1) {
-  animation-delay: 1s;
-  width: 40px;
-}
-
-.bubble_img:nth-child(2) {
-  animation-delay: 3s;
-  width: 50px;
-}
-
-.bubble_img:nth-child(3) {
-  animation-delay: 2s;
+#service .devider {
+  height: 3px;
   width: 70px;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, rgba(77, 82, 227, 0.521), rgb(7, 13, 172));
+  margin: auto;
 }
-
-.bubble_img:nth-child(4) {
-  animation-delay: 5s;
-  width: 80px;
-}
-
-.bubble_img:nth-child(5) {
-  animation-delay: 4s;
-  width: 60px;
-}
-
-.bubble_img:nth-child(6) {
-  animation-delay: 6s;
-  width: 70px;
+#service .service_p {
+  max-width: 720px;
+  color: #0d0a0a;
+  margin: auto;
+  padding: 15px 0px;
 }/*# sourceMappingURL=style.css.map */

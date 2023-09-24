@@ -12,7 +12,7 @@
     font-display: swap;
 }
 body{
-    font-size: 15px;
+    font-size: 14px;
     @include minwidth(768px) {
         font-size: 16px;     
     }
@@ -23,7 +23,7 @@ $prmary-font-color: #ffffff;
 $secondary-font-color: #0d0a0a;
 // section color
 $primary-sec-color:#fff;
-$sec-sec-color: rgb(255, 255, 255);
+$sec-sec-color: #ffffff;
 
 .container{
     @include minwidth(1400px) {
@@ -103,7 +103,92 @@ $sec-sec-color: rgb(255, 255, 255);
     font-size: 24px!important;   
 }
 // header menu css end
-
+// bannar row css start
+.bannar_sec{
+    background-image: url(../image/ofice.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    .banar_ovlay{
+        background-color: rgba(0, 200, 255, 0.612);
+        padding: 50px 0px;        
+        @include minwidth(768px) {
+            padding: 100px 10px;  
+        } 
+    }
+}
+.bannar-row{
+   max-width: 780px;
+   margin: auto;  
+   padding: 0px 10px;
+   @include minwidth(768px) {
+    padding: 10px 100px;  
+} 
+   .banar_hdng{
+        color: $prmary-font-color;
+        font-size: 18px;
+        text-align: center;     
+        font-weight: 600;
+        @include minwidth(768px) {
+            font-size: 28px;
+            @include minwidth(992px) {
+                font-size: 35px;
+            } 
+        } 
+    }
+}
+.banar_p{
+    color: $prmary-font-color;
+    text-align: center;
+    padding: 10px 10px;
+    @include minwidth(768px) {
+        padding: 10px 40px;
+    }
+}
+.bttn_get_started{
+    width: 140px;
+    height: 40px;
+    display: block;   
+    color: $primary-sec-color;
+    text-decoration: none;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to right, rgb(3, 6, 109), rgb(42, 46, 173));
+    margin: auto;
+    transition: .2s linear;
+    &:hover{
+        background: linear-gradient(to right, rgb(13, 18, 150), rgb(69, 74, 217));
+        transform: translateY(-4px);
+    }
+}
+// bannar css end
+// service css start
+#service{
+    padding: 80px 0px;
+    .service_hding{
+        font-weight: 600;
+        font-size: 35px;   
+    }
+    .devider{
+        height: 3px;
+        width: 70px;
+        margin-bottom: 40px;
+        background: linear-gradient(to right, rgba(77, 82, 227, 0.521),rgb(7, 13, 172));
+        margin: auto;    
+    }
+    .service_p{
+        max-width: 720px;
+        color: $secondary-font-color;  
+        margin: auto;      
+        padding: 15px 0px;
+    }
+}
+// service css end
 
 
 
