@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preload" href="assets/fonts">
+  <link rel="preload" as="font" href="assets/fonts">
   <!-- <link rel="stylesheet" href="assets/css/demo.css"> -->
   <link rel="stylesheet" href="assets/css/mmenu-light.css">
 </head>
@@ -16,7 +17,7 @@
 <body>
 
   <div class="billo_main">
-    <!-- header section start -->  
+    <!-- header section start -->
     <header class="headerr">
       <div class="container">
         <div class="hdr_row">
@@ -34,67 +35,103 @@
               <li><a href="#">CONTACT</a></li>
             </ul>
           </div>
-           <!-- mmenu html start -->
-       <div id="page">
-        <div class="header">
-            <a href="#menu"><span><i class="fa-solid fa-bars"></i></span></a>           
-            <nav id="menu">
-              <ul class="menu_trans">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SERVICE</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">FEATURES</a></li>
-                <li><a href="#">REVIEWS</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
-              </ul>
-            </nav>
-        </div>      
-      <!-- mmenu html end -->
+          <!-- mmenu html start -->
+          <div id="page">
+            <div class="header">
+              <a href="#menu"><span><i class="fa-solid fa-bars"></i></span></a>
+              <nav id="menu">
+                <ul class="menu_trans">
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">SERVICE</a></li>
+                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="#">FEATURES</a></li>
+                  <li><a href="#">REVIEWS</a></li>
+                  <li><a href="#">BLOG</a></li>
+                  <li><a href="#">CONTACT</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- mmenu html end -->
+          </div>
         </div>
-      </div>
-
+        </div>
     </header>
-      <!-- header section end -->
-      <main>
-        <!-- bannar start -->
-        <section class="bannar_sec">
-          <div class="banar_ovlay">
+    <!-- header section end -->
+    <main>
+      <!-- bannar start -->
+      <section class="bannar_sec">
+        <div class="banar_ovlay">
           <div class="container">
             <div class="bannar-row">
               <h2 class="banar_hdng">
                 We Design Remarkable and Stunning Bootstrap Websites.
               </h2>
               <p class="banar_p">
-               sit amet consectetur adipisicing elit. Excepturi laborum, perferendis eum aperiam, ducimus debitis nesciunt illo!
+                sit amet consectetur adipisicing elit. Excepturi laborum, perferendis eum aperiam, ducimus debitis
+                nesciunt illo!
               </p>
               <a class="bttn_get_started" href="#">Get Started</a>
             </div>
           </div>
         </div>
-        </section>
-        <!-- bannar end -->
-        <!-- service start -->
-        <section id="service">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 text-center">
-                <h2 class="service_hding">Our Services</h2>
-                <div class="devider"></div>
-                <p class="service_p">
-                  sit amet consectetur adipisicing elit. Excepturi laborum, perferendis eum aperiam, ducimus debitis nesciunt illo! sit amet consectetur adipisicing elit. Excepturi laborum.
-                 </p>
+      </section>
+      <!-- bannar end -->
+      <!-- service start -->
+      <section id="service">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="service_hding">Our Services</h2>
+              <div class="devider"></div>
+              <p class="service_p">
+                sit amet consectetur adipisicing elit. Excepturi laborum, perferendis eum aperiam, ducimus debitis
+                nesciunt illo! sit amet consectetur adipisicing elit. Excepturi laborum.
+              </p>
+              <div class="row card_row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/image/graphics.jpeg" class="card-img-top" alt="Graphics">
+                    <i class="fa-solid fa-object-group"></i>
+                    <div class="card-body">
+                      <h2 class="card-title">01. Graphics Designing</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/image/content.jpeg" class="card-img-top" alt="Graphics">
+                    <i class="fa-regular fa-comments"></i>
+                    <div class="card-body">
+                      <h2 class="card-title">02. Content Writing</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/image/UI-UX-Design.jpg" class="card-img-top" alt="Graphics">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <div class="card-body">
+                      <h2 class="card-title">03. UI/UX Designing</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- service end -->
-   
-          
-      </main>
+        </div>
+      </section>
+      <!-- service end -->
+    </main>
   </div>
-
-
   <!-- mmenu js start -->
   <script src="assets/js/mmenu-light.js"></script>
   <script>
@@ -120,7 +157,6 @@
       });
   </script>
   <!-- mmenu js end -->
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

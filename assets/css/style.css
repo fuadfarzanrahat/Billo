@@ -57,7 +57,12 @@ body {
 .hdr_menu ul li {
   position: relative;
   list-style: none;
-  margin: 0px 15px;
+  margin: 0px 7px;
+}
+@media only screen and (min-width: 992px) {
+  .hdr_menu ul li {
+    margin: 0px 15px;
+  }
 }
 .hdr_menu ul li a {
   text-decoration: none;
@@ -197,4 +202,52 @@ body {
   color: #0d0a0a;
   margin: auto;
   padding: 15px 0px;
+}
+
+.card_row {
+  margin-top: 20px;
+}
+
+.card {
+  border: 0px;
+  position: relative;
+}
+.card img {
+  max-width: 100%;
+  height: 150px;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card i {
+  position: absolute;
+  top: 42%;
+  left: 45%;
+  color: #ffffff;
+  background: linear-gradient(to right, rgba(39, 45, 222, 0.521), rgb(5, 10, 137));
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 50%;
+}
+@media only screen and (min-width: 768px) {
+  .card i {
+    top: 32%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .card i {
+    top: 37%;
+  }
+}
+
+.card-body {
+  margin-top: 30px;
+}
+.card-body .card-title {
+  font-size: 20px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
