@@ -30,9 +30,13 @@ $sec-sec-color: #ffffff;
         width: 1620px;      
     }
 }
+
 // header menu css start
 .headerr{
-    background-color: $sec-sec-color;
+    background-color: $sec-sec-color;      
+    position: sticky;
+    top: 0px;
+    z-index: 33;
 }
 .hdr_row{
     width: 100%;
@@ -60,7 +64,7 @@ $sec-sec-color: #ffffff;
         align-items: center;
         li{position: relative;
             list-style: none;
-            // padding: 0px 15px;
+            padding: 0px 15px;
             margin: 0px 7px;
             @include minwidth(992px) {
                 margin: 0px 15px; 
@@ -70,7 +74,10 @@ $sec-sec-color: #ffffff;
                 color: $secondary-font-color;
                 font-weight: 600;
                 font-size: 14px;                
-            }          
+            }  
+            a.active{
+                color: rgb(30, 27, 227)!important;    
+            }        
         }
     }
 }
@@ -83,7 +90,7 @@ $sec-sec-color: #ffffff;
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 7px;
     height: 3px;
     width: 0%;
     background: #34efdf;
@@ -91,7 +98,7 @@ $sec-sec-color: #ffffff;
     transition: all 0.4s ease;
 }
 .menu_trans li a:hover:before{
-    width: 100%;
+    width: 80%;
   }
 #page{
     width: 80%;
@@ -107,19 +114,19 @@ $sec-sec-color: #ffffff;
 }
 // header menu css end
 // bannar row css start
-.bannar_sec{
+#bannar_sec{
     background-image: url(../image/ofice.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    .banar_ovlay{
-        background-color: rgba(0, 200, 255, 0.612);
-        padding: 50px 0px;        
-        @include minwidth(768px) {
-            padding: 100px 10px;  
-        } 
-    }
+}
+.banar_ovlay{
+    background-color: rgba(0, 200, 255, 0.612);
+    padding: 50px 0px;        
+    @include minwidth(768px) {
+        padding: 100px 10px;  
+    } 
 }
 .bannar-row{
    max-width: 780px;
@@ -232,6 +239,61 @@ $sec-sec-color: #ffffff;
     }
 }
 // service css end
+// watch our video css start
+#about{
+    background-image: url(../image/w.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.wtch_vdo_row{
+    max-width: 780px;
+    margin: auto;
+    text-align: center;   
+    .wtch_vdo_hding{
+        color: $prmary-font-color;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+        @include minwidth(650px) {
+        font-size: 35px;   
+        }
+    }
+    .watch_vdo_devider{      
+        height: 3px;
+        width: 70px;
+        margin-bottom: 40px;
+        background: linear-gradient(to right, rgba(77, 82, 227, 0.521),rgb(7, 13, 172));
+        margin: auto;    
+    }
+}
+.watch_vdo_p{
+    color: $prmary-font-color;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding-top: 20px;
+}
+.video-btn{
+    color: $prmary-font-color;
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(3, 6, 109), rgb(42, 46, 173));
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  display: inline-flex; 
+  margin: 10px auto;
+    &:hover{
+        background: linear-gradient(to right, rgb(13, 18, 150), rgb(69, 74, 217));
+        transform: translateY(-4px);
+    }
+}
+// watch our video css end
 
 
 

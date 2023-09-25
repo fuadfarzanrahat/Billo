@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="assets/css/mmenu-light.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 
   <div class="billo_main">
     <!-- header section start -->
@@ -26,9 +26,9 @@
           </div>
           <div class="hdr_menu">
             <ul class="menu_trans">
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">SERVICE</a></li>
-              <li><a href="#">ABOUT</a></li>
+              <li><a href="#bannar_sec">HOME</a></li>
+              <li><a href="#service">SERVICE</a></li>
+              <li><a href="#about">ABOUT</a></li>
               <li><a href="#">FEATURES</a></li>
               <li><a href="#">REVIEWS</a></li>
               <li><a href="#">BLOG</a></li>
@@ -59,7 +59,7 @@
     <!-- header section end -->
     <main>
       <!-- bannar start -->
-      <section class="bannar_sec">
+      <section id="bannar_sec">
         <div class="banar_ovlay">
           <div class="container">
             <div class="bannar-row">
@@ -130,6 +130,23 @@
         </div>
       </section>
       <!-- service end -->
+      <!-- .watch video start -->
+      <section id="about">
+        <div class="banar_ovlay">
+          <div class="container">
+            <div class="wtch_vdo_row">
+              <h2 class="wtch_vdo_hding">Watch Our Video</h2>
+              <div class="watch_vdo_devider"></div>
+              <p class="watch_vdo_p">
+                sit amet consectetur adipisicing elit. Excepturi laborum, perferendis eum aperiam, ducimus debitis
+                nesciunt illo! sit amet consectetur adipisicing elit. Excepturi laborum.
+              </p>
+              <a href="https://www.youtube.com" target="_blank" class="video-btn"><i class="fa-solid fa-play"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- .watch video start -->
     </main>
   </div>
   <!-- mmenu js start -->
